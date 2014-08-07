@@ -1,0 +1,24 @@
+---
+
+dependencies:
+
+  - { role: elao.postgresql-server }
+  - { role: elao.postgresql-php }
+  - { role: elao.project-php,
+      name: phppgadmin,
+      root: '/opt/phppgadmin' }
+
+galaxy_info:
+
+  author:              elao
+  description:         A phpPgAdmin role for elao symfony standard vagrant box
+  company:             elao
+  license:             MIT
+  min_ansible_version: 1.7.0
+  platforms:
+    - name: Debian
+  versions:
+    - wheezy
+  categories:
+    - development
+    - web
