@@ -5,9 +5,11 @@ dependencies:
   - { role: elao.base }
   - { role: elao.postgresql-server }
   - { role: elao.postgresql-php }
-  - { role: elao.project-php,
-      name: phppgadmin,
-      root: '/opt/phppgadmin' }
+  - { role: elao.project,
+    elao_projects: {
+      phppgadmin: { type: php, host: '{{ elao_phppgadmin_host }}', root: '/opt/phppgadmin' }
+    }
+  }
 
 galaxy_info:
 
