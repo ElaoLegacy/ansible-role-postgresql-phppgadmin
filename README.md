@@ -13,7 +13,7 @@ This role only run on elao symfony standard vagrant box. See https://vagrantclou
 Role Variables
 --------------
 
-    elao_phppgadmin_host: phppgadmin  # phpPgAdmin host
+    elao_postgresql_phppgadmin_host: phppgadmin  # phpPgAdmin host
 
 
 Example Playbook

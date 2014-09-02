@@ -7,7 +7,7 @@ dependencies:
   - { role: elao.postgresql-php }
   - { role: elao.project,
     elao_projects: {
-      phppgadmin: { type: php, host: '{{ elao_phppgadmin_host }}', root: '/opt/phppgadmin' }
+      phppgadmin: { type: php, host: '{{ elao_postgresql_phppgadmin_host }}', root: '/opt/phppgadmin' }
     }
   }
 
